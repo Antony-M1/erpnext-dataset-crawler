@@ -35,6 +35,18 @@ Install the `requirements.txt` packages
 ```
 pip install -r requirements.txt
 ```
+
+### Step 4.
+Download the chrome driver and put in the project root folder
+
+Here the [download link](https://googlechromelabs.github.io/chrome-for-testing/)
+
+### Step 5.
+Start the `crawling` process. here the example `cmd`
+```
+scrapy crawl frappeframework -o temp/frappeframework.jsonl
+```
+
 </details>
 
 
