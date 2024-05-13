@@ -8,7 +8,7 @@ ERPNext Web Crawler, Scrapy, Web Crawler
 
 
 <details>
-    <summary><h1>Local setup<h1><summary>
+  <summary><h3>Local Setup</h3></summary>
 
 ### Step 1:
 
@@ -35,19 +35,17 @@ Install the `requirements.txt` packages
 ```
 pip install -r requirements.txt
 ```
-
 </details>
 
-# Debugger
 
 <details>
-    <summary><h1>Debugger<h1><summary>
-
+  <summary><h3>Debugger</h3></summary>
 
 Create `.vscode/launch.json` file. this debugger for `VSCode`.
 
-    Past this code.
-    ```
+Past this code.
+
+```
     {
     "version": "0.2.0",
     "configurations": [
@@ -62,5 +60,5 @@ Create `.vscode/launch.json` file. this debugger for `VSCode`.
         }
     ]
     }
-    ```
+```
 </details>
