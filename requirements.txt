@@ -1,2 +1,5 @@
 Scrapy==2.11.1
 selenium==4.20.0
+html2text==2024.2.26
+datasets==2.19.1
+python-dotenv==1.0.1

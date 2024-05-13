@@ -5,7 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+
 import time
+
+import html2text
 
 class FrappeframeworkSpider(scrapy.Spider):
     name = "frappeframework"
@@ -18,8 +22,14 @@ class FrappeframeworkSpider(scrapy.Spider):
     
     def parse(self, response):
         
+        # Initialize Chrome options
+        chrome_options = Options()
+
+        # Enable headless mode
+        chrome_options.add_argument("--headless")
+        
         self.service = Service(executable_path="./chromedriver")
-        self.driver = webdriver.Chrome(service=self.service)
+        self.driver = webdriver.Chrome(service=self.service, options=chrome_options)
         
         self.driver.get(response.url)
         
@@ -31,8 +41,9 @@ class FrappeframeworkSpider(scrapy.Spider):
         yield {
             "title": response.css(".wiki-title::text").get(),
             "url": response.url,
-            # "main_content": response.css(".from-markdown").get(),
-            "main_content": self.driver.find_element(By.CLASS_NAME, "from-markdown").text
+            "main_content_html": response.css(".from-markdown").get(),
+            "main_content_str": self.driver.find_element(By.CLASS_NAME, "from-markdown").text,
+            "main_content_md": html2text.html2text(response.css(".from-markdown").get())
         }
         
         

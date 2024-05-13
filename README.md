@@ -10,6 +10,7 @@ ERPNext Web Crawler, Scrapy, Web Crawler
 <details>
   <summary><h3>Local Setup</h3></summary>
 
+
 ### Step 1:
 
 clone the Project Using this command
@@ -36,12 +37,18 @@ Install the `requirements.txt` packages
 pip install -r requirements.txt
 ```
 
-### Step 4.
+### Step 4:
+Create a `.env` file in the workspace directory. past this code
+```
+HUGGINGFACEHUB_API_TOKEN=<YOUR_HUGGING_FACE_API_TOKEN_OR_ACCESS_TOKEN>
+```
+
+### Step 5.
 Download the chrome driver and put in the project root folder
 
 Here the [download link](https://googlechromelabs.github.io/chrome-for-testing/)
 
-### Step 5.
+### Step 6.
 Start the `crawling` process. here the example `cmd`
 ```
 scrapy crawl frappeframework -o temp/frappeframework.jsonl
