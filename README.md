@@ -49,9 +49,15 @@ Download the chrome driver and put in the project root folder
 Here the [download link](https://googlechromelabs.github.io/chrome-for-testing/)
 
 ### Step 6.
-Start the `crawling` process. here the example `cmd`
+Start the `crawling` process. here the example `cmd`.
+
+For `FrappeFramework`
 ```
 scrapy crawl frappeframework -o temp/frappeframework.jsonl
+```
+For `EPRNext Doc`
+```
+scrapy crawl erpnext_doc -o temp/erpnext_doc.jsonl
 ```
 
 </details>
