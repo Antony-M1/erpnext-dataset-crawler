@@ -59,6 +59,10 @@ For [`EPRNext Doc`](https://docs.erpnext.com/docs/user/manual/en/introduction)
 ```
 scrapy crawl erpnext_doc -o temp/erpnext_doc.jsonl
 ```
+For [`Frappe HR`](https://frappehr.com/docs/v14/en/intro)
+```
+scrapy crawl frappe_hr -o temp/frappe_hr.jsonl
+```
 
 </details>
 

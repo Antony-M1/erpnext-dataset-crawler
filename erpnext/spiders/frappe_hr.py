@@ -23,7 +23,7 @@ class FrappeHrSpider(scrapy.Spider):
         chrome_options = Options()
 
         # Enable headless mode
-        # chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
         
         self.service = Service(executable_path="./chromedriver")
         self.driver = webdriver.Chrome(service=self.service, options=chrome_options)
