@@ -51,11 +51,11 @@ Here the [download link](https://googlechromelabs.github.io/chrome-for-testing/)
 ### Step 6.
 Start the `crawling` process. here the example `cmd`.
 
-For `FrappeFramework`
+For [`FrappeFramework`](https://frappeframework.com/docs/user/en/introduction)
 ```
 scrapy crawl frappeframework -o temp/frappeframework.jsonl
 ```
-For `EPRNext Doc`
+For [`EPRNext Doc`](https://docs.erpnext.com/docs/user/manual/en/introduction)
 ```
 scrapy crawl erpnext_doc -o temp/erpnext_doc.jsonl
 ```
