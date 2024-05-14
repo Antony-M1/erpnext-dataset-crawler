@@ -1,3 +1,14 @@
+"""
+    README:
+    
+    This file is basically used to check the all file format stored in the `temp` folder is correct or not.
+    To run this file using this command.
+    
+    ```py
+    python check.py
+    ```
+"""
+
 import json
 import traceback
 import os
