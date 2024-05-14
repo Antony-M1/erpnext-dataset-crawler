@@ -27,7 +27,7 @@ def check_jsonl_files(file_bath):
             except:
                 traceback.print_exc(line_number, line_number, file_bath)
                 raise ("Data error: " + line_number)
-    print("All File Okay ✅✅✅")
+    print(f"File - {file_bath} all data Okay ✅✅✅")
 
 
 # Path to the folder containing JSONL files

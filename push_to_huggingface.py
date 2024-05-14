@@ -18,7 +18,7 @@ load_dotenv()
 
 file_path = "./temp/frappeframework.jsonl"
 
-repo_id = "antony-pk/erpnext-frappeframework-ds"
+repo_id = "antony-pk/erpnext-docs-ds"
 
 # Login To the huggingface
 HUGGINGFACEHUB_API_TOKEN = os.environ.get('HUGGINGFACEHUB_API_TOKEN')
