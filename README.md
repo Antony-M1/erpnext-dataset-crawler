@@ -1,6 +1,7 @@
 # erpnext-dataset-crawler
-ERPNext Web Crawler, Scrapy, Web Crawler
+This projects is used to scrap the data from three different sites and store in the HuggingFace as a datasets For LLM finetune Process
 
+https://huggingface.co/antony-pk
 
 # Prerequisites
 
